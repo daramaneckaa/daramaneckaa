@@ -53,7 +53,7 @@ Checklist
 
 9.Verify that the "Magnifying Glass" illustrated at the left end of the search field leads to the search for the selected product - failed
 
-10.Check that after searching for a product and a drop-down window appears, the "Cross" button closes this drop-down window - pass 
+10.Check that after searching for a product, a drop-down window appears, and the "Cross" button closes this drop-down window - pass 
 
 11.Check that products that were previously entered into the search field are displayed in the "Search History" drop-down box - pass
 
@@ -140,7 +140,7 @@ Test cases for testing the functionality of the Citrus website
                                             
 
 											
-**Step to reproduse**					
+**Step to reproduce**					
 
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|
@@ -167,14 +167,14 @@ Test cases for testing the functionality of the Citrus website
 |2	macOS Sequoia 15.5 (24F74)		|		2	Number: 0678394674				|	
 |3	Go to the profile "Login" in the upper right corner	|			3	Name: Tatiana			|		
 		
-**Step to reproduse**																				
+**Step to reproduce**																				
 |Step Details          |      Expected Results|    Pass/Failed |
 |--------------------|----------------------|---------|										
 |1	Enter email on the "Mail" field	|	The email is displayed on the "Mail" field	|	  Pass	|					
 |2	Enter number on the "Number" field |		The number is displayed on the "Number" field|		Pass |						
 |3	Enter name in the "Name" field		|The name is displayed on the "Name" field	|	Pass			|			
-|4	Press "Enter" bottom	|	The code is sent to the specified phone number. The field  for entering the code is shown to the user	|	Pass				|		
-|5	Dont enter the code and reload the page 	|	The user  isn`t registered on the website. The following message is shown.	 Тестувала з реальним номером,який ще не був зареєстраний. Код надійшов, проте я  його не ввела, думаючи, що  тест пройшов.Проте коли нижче використала цей номер для повторної перевірки реєстрації - сайт написав, що користувач з таким номером телефону існує. Також можна зайти в особистий кабінет за цим номером телефону.	|		Fail|
+|4	Press "Enter" at the bottom	|	The code is sent to the specified phone number. The field  for entering the code is shown to the user	|	Pass				|		
+|5	Don't enter the code and reload the page 	|	The user  isn`t registered on the website. The following message is shown.	 Тестувала з реальним номером,який ще не був зареєстраний. Код надійшов, проте я  його не ввела, думаючи, що  тест пройшов.Проте коли нижче використала цей номер для повторної перевірки реєстрації - сайт написав, що користувач з таким номером телефону існує. Також можна зайти в особистий кабінет за цим номером телефону.	|		Fail|
 
 ---
 
@@ -186,7 +186,7 @@ Test cases for testing the functionality of the Citrus website
 |Date Tested|		06.08.2025|	
 |Test Case |		Pass|		
 
- **Step to reproduse**	
+ **Step to reproduce**	
 |Prerequisites		|Test Data		|
 |----------|-------------|		
 1	Chrome version 138.0.7204.101		|		1	Email: tatianarotaru@gmail.com				
@@ -196,17 +196,17 @@ Test cases for testing the functionality of the Citrus website
 										
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|				
-1	Enter email on the "Mail" fiel	|	The email is displayed on the "Mail" fiedl	|	Pass					
-2	Enter number on th "Number" field	|	The number is displayed on the "Number" field	|	Pass					
-3	Enter name on the "Name" field	|	The name is displayed on the "Name" field	|	Pass					
-4	Press "Enter" bottom	|	The code is sended to the specified phone number. The field  for entering the code is showned to the user	|	Pass					
+1	Enter email in the "Mail" field	|	The email is displayed in the "Mail" field	|	Pass					
+2	Enter a number in the "Number" field	|	The number is displayed in the "Number" field	|	Pass					
+3	Enter name in the "Name" field	|	The name is displayed on the "Name" field	|	Pass					
+4	Press "Enter" bottom	|	The code is sent to the specified phone number. The field  for entering the code is shown to the user	|	Pass					
 5	Enter the correct code |		The user isn`t registered on the web side|		Pass			
 
 ---
 
-**Test Case ID4.Checking registration when entering an incorrect mail format**
+**Test Case ID4.Checking registration when entering an incorrect email format**
 
-Test Case Description		Test the Login Functionality in web side	
+
 										
 |Tester's Name |		Manetska Daria|
 |------------|-------------|
@@ -221,12 +221,12 @@ Test Case Description		Test the Login Functionality in web side
 3	Co to the profile "Login" in the upper right corner			|	3	Name: Tatiana				
 
 										
-**Step to reproduse**					
+**Step to reproduce**					
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|				
-1	Enter an incorrect email format in the Mail field |		The email is displayed on the "Mail" fiedl	|	Pass					
-2	Enter number on th "Number" field	|	The number is displayed on the "Number" field	|	Pass					
-3	Enter name on the "Name" field	|	The name is displayed on the "Name" field	|	Pass					
+1	Enter an incorrect email format in the Mail field |		The email is displayed on the "Mail" field	|	Pass					
+2	Enter a number in the "Number" field	|	The number is displayed in the "Number" field	|	Pass					
+3	Enter name in the "Name" field	|	The name is displayed on the "Name" field	|	Pass					
 4	Press "Enter" bottom	|	The "Mail" field is highlighted in red. A message about the incorrect mail format is displayed |	Pass		
 
 ---
@@ -246,13 +246,13 @@ Test Case Description		Test the Login Functionality in web side
 3	The phone number has already been used for registration		|		3	Name: Tatiana				
 				
 										
-**Step to reproduse**						
+**Step to reproduce**						
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|							
 |1	Enter the correct email format in the Mail field |	The email is displayed on the "Mail" fiedl	|	Pass			|		
 |2	Enter the phone number you have used to register before | The number is displayed on the "Number" field	|	Pass|					
 |3	Enter name on the "Name" field	|	The name is displayed on the "Name" field |	Pass	|				
-|4	Click the ""Login"" button | The message "A user with this phone number already exists" is displayed	|	Pass	|			
+|4	Click the "Login" button | The message "A user with this phone number already exists" is displayed	|	Pass	|			
 
 ---
 
@@ -269,13 +269,13 @@ Test Case Description		Test the Login Functionality in web side
 2	macOS Sequoia 15.5 (24F74)		|		2	Number: 0758394674				
 3	Go to the profile "Login" in the upper right corner	|			3	Name: Tatiana				
 
-**Step to reproduse**	                
+**Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|																						
-1	Enter the correct email format in the Mail field 	The email is displayed on the "Mail" fiedl		Pass					
-2	Enter an incorrect phone number in the "Number"		The number is displayed on the "Number" field		Pass					
-3	Enter name on the "Name" field		The name is displayed on the "Name" field		Pass					
-4	Click the ""Login"" button The field with the number will be underlined in red Pass		
+1	Enter the correct email format in the Mail field |	The email is displayed on the "Mail" field |		Pass|					
+2	Enter an incorrect phone number in the "Number"	|	The number is displayed in the "Number" field|		Pass|					
+3	Enter name in the "Name" field	|	The name is displayed on the "Name" field|Pass	|				
+4	Click the "Login" button |The field with the number will be underlined in red| Pass		|
 
 ---
 
@@ -295,12 +295,12 @@ Test Case Description		Test the Login Functionality in web side
 3	User successfully registered	|							
 							
 										
-**Step to reproduse**	                
+**Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|	
-1	Co to the "Login" section	|	The profile is opened with field for entering number|		Pass					
-2	Enter the correct number on the "Number" field	|	The number is displayed on the "Number" field|	Pass					
-3	Enter "Next"	|	The field for entering the code is displayed. The message "Code from SMS sent to +380679585985""is displayed in the profile"	|	Pass	
+1	Co to the "Login" section	|	The profile is opened with a field for entering a number|		Pass					
+2	Enter the correct number in the "Number" field	|	The number is displayed in the "Number" field|	Pass					
+3	Enter "Next"	|	The field for entering the code is displayed. The message "Code from SMS sent to +380679585985" is displayed in the profile"	|	Pass	
 
 ---
 
@@ -318,14 +318,14 @@ Test Case Description		Test the Login Functionality in web side
 2	macOS Sequoia 15.5 (24F74)			|				
 3	User is successfully registered on the website|
 		
-**Step to reproduse**	                
+**Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|	
 1	Go to the "Login" section	|	A profile is opened with a field for entering a phone number|	Pass					
-2	Click "Sign in by Email"|	The ""Number"" field is changed to the "Email" field |Pass					
+2	Click "Sign in by Email"|	The "Number" field is changed to the "Email" field |Pass					
 3	Enter mail | The entered is displayed in the "Mail" field| Pass					
-4	Click "Next" |	A code is sented to the appropriate mail	|Pass					
-5	Enter the correct code | The user is abled to log in to your account	|	Pass				
+4	Click "Next" |	A code is sent to the appropriate email	|Pass					
+5	Enter the correct code | The user is able to log in to your account	|	Pass				
 
 ---
 
@@ -340,13 +340,182 @@ Test Case Description		Test the Login Functionality in web side
 |Prerequisites		|Test Data		|
 |----------|-------------|
 1	Chrome version 138.0.7204.101		|					
-2	macOS Sequoia 15.5 (24F74)		|			
+2	macOS Sequoia 15.5 (24F74)		|		
 		
 				
-**Step to reproduse**	                
+**Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|										
-1	Add two different products from the same category to the Comparison section		|Products is added to the "Comparison" section|	Pass					
-2	Check if they are comparable |A comparison chart of the characteristics of the corresponding products is created and displayed on the web page |Pass					
+1	Add two different products from the same category to the Comparison section		|Products are added to the "Comparison" section|	Pass					
+2	Check if they are comparable |A comparison chart of the characteristics of the corresponding products is created and displayed on the web page |Pass		
+
+---
+
+**Test Case ID10.Check that the "Electric vehicles" button takes you to the appropriate category**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|
+1	Chrome version 138.0.7204.101	|					
+2	macOS Sequoia 15.5 (24F74)		|				
+3	Go to the main page				|		
 		
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|		
+1	Click on the "Personal transportation" button |The user will be redirected to the page with the electric vehicle |	Pass		
+
+
+---
+
+# Testing of the Kittigram 
+
+**Test Case ID1.Verifying functionality of the "Like" button**
+										
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|			
+1	Chrome version 138.0.7204.101	|				
+2	macOS Sequoia 15.5 (24F74)		|					
+3	User is logged in app|			
+
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|							
+1	Enter the "Like" button 1 time		|The "Like" button is changed to violet color. The number near the"Like" button is  increased by 1	|	Pass
+
+---
+										
+**Test Case ID2. Verifying the functionality of the "Like" counter**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|	
+1	Chrome version 138.0.7204.101|
+2	macOS Sequoia 15.5 (24F74)|
+3	User is logged into the application|
+4	The post already has 5 likes displayed|
+
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|							
+1	Enter the "Like" button 1 time		|The "Like" button is changed to violet color. The number near the"Like" button is  increased by 1	|	Pass
+2 	Enter the "Like" button 1 time		|The "Like" button is changed to white color. The number near the "Like" button decreases by 1	|	Pass	
+
+-----
+
+**Test Case ID3.Checking the writing of comments**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|				
+1	Chrome version 138.0.7204.101			|				
+2	macOS Sequoia 15.5 (24F74)				|				
+3	User is logged in app				|				
+4	Go to comments to another correspondent				|				
+																			
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|		
+1	Enter the field for comment		|The flashing cursor is shown in the field |Pass	|				
+2	Fill the letters of a valid language in the "Comment" field 	|	The letters are displayed in the field	|	Pass	|				
+3	Fill the special symbols on the "Comment" field |		The special symbols are displayed in the field	|	Pass	|				
+4	Fill the numbers in the "Comment" field 	|	The numbers are displayed in the field	|	Pass		|			
+5	Fill the smiles on the "Comment" field 	|	The smiles are displayed in the field	|	Pass	|	
+
+---
+
+**Test Case ID4.Checking photo upload without cat**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+|Prerequisites		|Test Data		|
+|----------|-------------|		
+1	Chrome version 138.0.7204.101	|Photo without a cat							
+2	macOS Sequoia 15.5 (24F74)								
+3	User is logged in app							
+				
+		
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|											
+1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"	|	Pass|					
+2	Enter categories "Select photo from gallery"	|	  The gallery is opened		|Pass|					
+3	Enter categories "Take a photo"	|	The camera is activated|		Pass	|				
+4	Select the photo without a cat from the gallery of the phone	|	The message is displayed " There is no cat in this photo|	Pass	|				
+5	Take a photo without a cat using a phone camera	|	The message is displayed " There is no cat in this photo|		Pass	|		
+
+---
+
+**Test Case ID5. Сheck video addition**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+|Prerequisites		|Test Data		|
+|----------|-------------|				
+1	Chrome version 138.0.7204.101	|	Video with cat					
+2	macOS Sequoia 15.5 (24F74)							
+3	User is logged in app							
+4					4					
+										
+				
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|								
+1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"		|Pass	|				
+2	Enter categories "Select photo from gallery"	|	The gallery is opened	|	Pass		|			
+3	Enter categories "Take a photo"	|	The name is displayed on the "Name" field	|	Pass					
+4	Select the video with a cat from the gallery of the phone	|	The message is displayed " Unsupported format type"	|	Pass					
+5	Take a photo with a cat using a phone camera	|	The message is displayed " Unsupported format type"	|	Pass	
+
+---
+
+**Test Case ID6.Checking subscriptions to other users**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data|
+|----------|-------------|					
+1	Chrome version 138.0.7204.101	|						
+2	macOS Sequoia 15.5 (24F74)		|				
+3	User is logged in app			|					
+													
+								
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|																		
+|1	Enter the "Subscribe" bottom	| A window with the information "(Username) is your friend" is displayed. Your friends count will increase by 1. New photos added by a "friend" is displayed on the user's feed|Pass	|				
 									
