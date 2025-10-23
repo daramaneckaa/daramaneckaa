@@ -1,9 +1,7 @@
-Hi there 👋
-I’m passionate about ensuring product quality and delivering smooth user experiences. Recently completed QA courses at EPAM and Beetroot Academy, where I gained hands-on experience with:
+#### Hi there 👋
+I’m passionate about ensuring product quality and delivering smooth user experiences. Recently completed QA courses at EPAM and Beetroot Academy. I have also attached a file showcasing another project that demonstrates my work with SQL commands, API testing, mobile testing (including emulation), and UI/UX testing: https://drive.google.com/drive/folders/1jpp_P_Wb0Q3HjMIkH5jOfF4uXLAq9xa5?usp=sharing
 
-🧩 Functional, UI/UX & Exploratory Testing, manual testing of Web and Mobile applications.
-🔍 Working with SQL, Jira, and DevTools. 🔍 API Testing (Postman, Swagger)
-🐞 Bug tracking (Jira, TestRail) 🌱 Currently exploring new tools and QA practices to grow as a professional.
+##### The following are sample checklists and test cases demonstrating my approach to testing.
 
 # Testing of the Citrus website
 
