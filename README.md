@@ -409,7 +409,6 @@ Test cases for testing the functionality of the Citrus website
 1	Chrome version 138.0.7204.101|
 2	macOS Sequoia 15.5 (24F74)|
 3	User is logged into the application|
-4	The post already has 5 likes displayed|
 
 **Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
@@ -419,7 +418,7 @@ Test cases for testing the functionality of the Citrus website
 
 -----
 
-**Test Case ID3.Checking the writing of comments**
+**Test Case ID3.Checking that comments are written using valid language characters**
 
 |Tester's Name |		Manetska Daria|
 |------------|-------------|
@@ -429,7 +428,7 @@ Test cases for testing the functionality of the Citrus website
 
 |Prerequisites		|Test Data		|
 |----------|-------------|				
-1	Chrome version 138.0.7204.101			|				
+1	Chrome version 138.0.7204.101			|	Stunning !			
 2	macOS Sequoia 15.5 (24F74)				|				
 3	User is logged in app				|				
 4	Go to comments to another correspondent				|				
@@ -440,13 +439,82 @@ Test cases for testing the functionality of the Citrus website
 |-------------|------------|---------|		
 1	Enter the field for comment		|The flashing cursor is shown in the field |Pass	|				
 2	Fill the letters of a valid language in the "Comment" field 	|	The letters are displayed in the field	|	Pass	|				
-3	Fill the special symbols on the "Comment" field |		The special symbols are displayed in the field	|	Pass	|				
-4	Fill the numbers in the "Comment" field 	|	The numbers are displayed in the field	|	Pass		|			
-5	Fill the smiles on the "Comment" field 	|	The smiles are displayed in the field	|	Pass	|	
+3   Enter the "Submit" button | The comments are left in the field | Pass|
+
+---
+**Test Case ID4.Checking that comments are written using special symbols**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|				
+1	Chrome version 138.0.7204.101			|	 &@#			
+2	macOS Sequoia 15.5 (24F74)				|				
+3	User is logged in app				|				
+4	Go to comments to another correspondent				|				
+																			
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|		
+1	Enter the field for comment		|The flashing cursor is shown in the field |Pass	|				
+2	Fill the special symbols on the "Comment" field |		The special symbols are displayed in the field	|	Pass	|				
+3   Enter the "Submit" button | The comments are left in the field | Pass|
 
 ---
 
-**Test Case ID4.Checking photo upload without cat**
+**Test Case ID5.Checking that comments are written using number**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|	
+1	Chrome version 138.0.7204.101		| 12345 |							
+2	macOS Sequoia 15.5 (24F74)							
+3	User is logged in app									
+4	Go to the comments of another correspondent								
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|		
+1	Enter the field for comment	|	The flashing cursor is shown in the field 	|	Pass	|										
+2	Fill the number in the "Comment" field 	|	The number is displayed in the field	|	Pass	|
+3   Enter the "Submit" button | The comments are left in the field | Pass|
+
+---
+**Test Case ID6.Checking that comments are written using smile**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+
+|Prerequisites		|Test Data		|
+|----------|-------------|	
+1	Chrome version 138.0.7204.101	| :) 								
+2	macOS Sequoia 15.5 (24F74)							
+3	User is logged in app									
+4	Go to the comments of another correspondent								
+										
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|		
+1	Enter the field for comment	|	The flashing cursor is shown in the field 	|	Pass	|							
+2	Fill the smiles on the "Comment" field 	|	The smiles are displayed in the field	|	Pass	|
+3   Enter the "Submit" button | The comments are left in the field | Pass|
+
+---
+
+**Test Case ID7.Checking photo upload without cat from gallery**
 
 |Tester's Name |		Manetska Daria|
 |------------|-------------|
@@ -464,14 +532,35 @@ Test cases for testing the functionality of the Citrus website
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|											
 1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"	|	Pass|					
-2	Enter categories "Select photo from gallery"	|	  The gallery is opened		|Pass|					
-3	Enter categories "Take a photo"	|	The camera is activated|		Pass	|				
-4	Select the photo without a cat from the gallery of the phone	|	The message is displayed " There is no cat in this photo|	Pass	|				
-5	Take a photo without a cat using a phone camera	|	The message is displayed " There is no cat in this photo|		Pass	|		
+2	Enter categories "Select photo from gallery"	|	  The gallery is opened		|Pass|						
+3	Select the photo without a cat from the gallery of the phone	|	The message is displayed " There is no cat in this photo|	Pass	|				
 
 ---
 
-**Test Case ID5. Сheck video addition**
+**Test Case ID8.Checking photo upload without cat via the camera**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+|Prerequisites		|Test Data		|
+|----------|-------------|		
+1	Chrome version 138.0.7204.101	|Photo without a cat							
+2	macOS Sequoia 15.5 (24F74)								
+3	User is logged in app							
+				
+		
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|											
+1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"	|	Pass|					
+2	Enter categories "Take a photo"	|	  The gallery is opened		|Pass|									
+3	Take a photo without a cat using a phone camera	|	The message is displayed " There is no cat in this photo|		Pass	|		
+
+---
+
+**Test Case ID9. Сheck video addition from gallery with cat**
 
 |Tester's Name |		Manetska Daria|
 |------------|-------------|
@@ -483,21 +572,41 @@ Test cases for testing the functionality of the Citrus website
 1	Chrome version 138.0.7204.101	|	Video with cat					
 2	macOS Sequoia 15.5 (24F74)							
 3	User is logged in app							
-4					4					
+				
 										
 				
 **Step to reproduce**	                
 |Step Details|Expected Results| Pass/Failed |
 |-------------|------------|---------|								
 1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"		|Pass	|				
-2	Enter categories "Select photo from gallery"	|	The gallery is opened	|	Pass		|			
-3	Enter categories "Take a photo"	|	The name is displayed on the "Name" field	|	Pass					
+2	Enter categories "Take a video"	|	The gallery is opened	|	Pass		|								
 4	Select the video with a cat from the gallery of the phone	|	The message is displayed " Unsupported format type"	|	Pass					
-5	Take a photo with a cat using a phone camera	|	The message is displayed " Unsupported format type"	|	Pass	
+
+---
+**Test Case ID10. Сheck video addition with cat via camera**
+
+|Tester's Name |		Manetska Daria|
+|------------|-------------|
+|Date Tested|		06.08.2025|	
+|Test Case |		Pass		|
+
+|Prerequisites		|Test Data		|
+|----------|-------------|				
+1	Chrome version 138.0.7204.101	|	Video with cat					
+2	macOS Sequoia 15.5 (24F74)							
+3	User is logged in app										
+										
+				
+**Step to reproduce**	                
+|Step Details|Expected Results| Pass/Failed |
+|-------------|------------|---------|								
+1	Enter the "+" buttom 	|	The window with drop down list with categories "Select photo from gallery", "Take a photo"		|Pass	|						
+2	Enter categories "Take a video"	|	The name is displayed on the "Name" field	|	Pass									
+3	Take a video with a cat using a phone camera	|	The message is displayed " Unsupported format type"	|	Pass	
 
 ---
 
-**Test Case ID6.Checking subscriptions to other users**
+**Test Case ID11.Checking subscriptions to other users**
 
 |Tester's Name |		Manetska Daria|
 |------------|-------------|
